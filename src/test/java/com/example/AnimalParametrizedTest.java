@@ -11,11 +11,11 @@ import static org.hamcrest.CoreMatchers.equalTo;
 
 @RunWith(Parameterized.class)
 
-public class AnimalTestParametrized {
+public class AnimalParametrizedTest {
     private final String animalKind;
     private final List<String> expectedListOfFood;
 
-    public AnimalTestParametrized(String animalKind, List<String> expectedListOfFood) {
+    public AnimalParametrizedTest(String animalKind, List<String> expectedListOfFood) {
         this.animalKind = animalKind;
         this.expectedListOfFood = expectedListOfFood;
     }

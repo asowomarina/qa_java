@@ -8,20 +8,20 @@ import static org.junit.Assert.*;
 public class FelineTest {
 
     @Test
-    public void getFamilyShouldReturnCatFamily(){
+    public void getFamilyShouldReturnCatFamilyTest(){
         Feline feline = new Feline();
         String actual = feline.getFamily();
         assertEquals("Кошачьи", actual);
     }
     @Test
-    public void getKittensShouldReturnOneKitten(){
+    public void getKittensShouldReturnOneKittenTest(){
         Feline feline = new Feline();
         int actual = feline.getKittens();
         assertEquals(1, actual);
     }
 
     @Test
-    public void getKittensWithKittensCountShouldReturnKittensCount(){
+    public void getKittensWithKittensCountShouldReturnKittensCountTest(){
         Feline feline = new Feline();
         int expected = 3;
         int actual = feline.getKittens(expected);

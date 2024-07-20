@@ -1,26 +1,24 @@
-package org.example;
+package com.example;
 
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
 import org.mockito.Mock;
-import com.example.Feline;
-import com.example.Lion;
 import static org.junit.Assert.*;
 
 @RunWith(Parameterized.class)
-public class LionTestParametrized {
+public class LionParametrizedTest {
     private final String sex;
 
 
-    public LionTestParametrized(String sex) {
+    public LionParametrizedTest(String sex) {
         this.sex = sex;
 
     }
 
     @Parameterized.Parameters
-    public static Object[][] createTestsParametrs() {
+    public static Object[][] createTestsParameters() {
         return new Object[][]{
                 {"Львенок"},
                 {"null"},
@@ -32,7 +30,7 @@ public class LionTestParametrized {
     private Feline feline;
 
     @Test
-    public void testCreateFailLion(){
+    public void createFailLionTest(){
         boolean thrown = false;
         try {
             Lion lion = new Lion(sex, feline);

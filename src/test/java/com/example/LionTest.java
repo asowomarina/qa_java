@@ -33,7 +33,7 @@ public class LionTest {
     }
 
     @Test
-    public void createLionMale()throws Exception{
+    public void createLionMaleTest()throws Exception{
         Lion lion = new Lion("Самец", feline);
         boolean expected = true;
         boolean actual = lion.doesHaveMane();
@@ -41,7 +41,7 @@ public class LionTest {
     }
 
     @Test
-    public void createLionFemale()throws Exception{
+    public void createLionFemaleTest()throws Exception{
         Lion lion = new Lion("Самка", feline);
         boolean expected = false;
         boolean actual = lion.doesHaveMane();
@@ -49,7 +49,7 @@ public class LionTest {
     }
 
     @Test
-    public void createLionInvalidGender() {
+    public void createLionInvalidGenderTest() {
         try {
             Lion lion = new Lion("Оно", feline);
             lion.doesHaveMane();

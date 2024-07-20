@@ -17,7 +17,7 @@ public class LionAlexTest {
     Feline feline;
 
     @Test
-    public void getKittensOfAlex() throws Exception{
+    public void getKittensOfAlexTest() throws Exception{
         MatcherAssert.assertThat("У льва Алекса нет львят",
                 new LionAlex(feline).getKittens(),
                 equalTo(0)
