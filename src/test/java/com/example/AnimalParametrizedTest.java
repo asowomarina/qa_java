@@ -35,4 +35,5 @@ public class AnimalParametrizedTest {
                 equalTo(this.expectedListOfFood)
         );
     }
+
 }

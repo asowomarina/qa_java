@@ -14,7 +14,6 @@ public class LionParametrizedTest {
 
     public LionParametrizedTest(String sex) {
         this.sex = sex;
-
     }
 
     @Parameterized.Parameters
